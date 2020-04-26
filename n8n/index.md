@@ -21,7 +21,15 @@ Tutorials: https://docs.n8n.io/#/tutorials
 Here has many examples: https://n8n.io/workflows
 
 #### n8n in PECE Project
-![Folder Structure](/n8n/images/folderN8N.png)
+
+##### Folder structure
+![Folder Structure](images/folderN8N.png)
 
 - **enabled**: Folder with the jsons files to need run.
 - **base_pece_automation.json**: Base to start your automations.
+
+##### Import base pece automation
+
+
+##### Enable automations
+Run `make start-automations` after install PECE project or update/create automations
