@@ -20,7 +20,8 @@ Tutorials: https://docs.n8n.io/#/tutorials
 
 Here has many examples: https://n8n.io/workflows
 
-![Folder Structure] (images/folderN8N.png)
+#### n8n in PECE Project
+![Folder Structure] (/n8n/images/folderN8N.png)
 
 - **enabled**: Folder with the jsons files to need run.
 - **base_pece_automation.json**: Base to start your automations.
