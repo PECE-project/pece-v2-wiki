@@ -12,7 +12,7 @@ the login in the http url access.
 
 3- Start/Restart n8n docker service.
 
-### Creating automations
+### Automations
 
 #### n8n (nodemations)
 Before continue it's important you know N8N
@@ -28,7 +28,9 @@ Here has many examples: https://n8n.io/workflows
 - **enabled**: Folder with the jsons files to need run.
 - **base_pece_automation.json**: Base to start your automations.
 
-##### Import base pece automation
+##### Creating automation
+1- Importa json base file
+2- Copy client id to connect in the API
 
 
 ##### Enable automations
