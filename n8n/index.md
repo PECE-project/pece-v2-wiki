@@ -4,7 +4,16 @@ This integration is the responsible for all automations on PECE project.
 
 ## Setup
 
-### Creating password to access
+### .env variables
+- **N8N_CLIENT_ID**: Client ID to connect in OAuth 2.0 and get API
+- **N8N_CLIENT_SECRET**: Client secret to use to get token
+- **WEBHOOK_N8N_USERNAME**: Username to send message to n8n
+- **WEBHOOK_N8N_PASSWORD**: Password to send message to n8n
+- **N8N_HTTP_ACCESS**: User and password to authenticate in n8n url.
+
+Below has the explanation about each variable
+
+#### N8N_HTTP_ACCESS
 1- Use this command in your terminal `echo $(htpasswd -nb user password)` where `user` and `password` are
 the login in the http url access.
 
@@ -29,7 +38,8 @@ Here has many examples: https://n8n.io/workflows
 - **base_pece_automation.json**: Base to start your automations.
 
 ##### Creating automation
-1- Importa json base file
+1- Import json base file
+
 2- Copy client id to connect in the API
 
 
