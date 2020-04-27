@@ -7,11 +7,25 @@ This integration is the responsible for all automations on PECE project.
 ### .env variables
 - **N8N_CLIENT_ID**: Consumer UUID to use with OAuth 2.0 and get API.
 - **N8N_CLIENT_SECRET**: Client secret in consumer.
-- **WEBHOOK_N8N_USERNAME**: Username to send message to n8n.
-- **WEBHOOK_N8N_PASSWORD**: Password to send message to n8n.
+- **SITE_N8N_USERNAME**: Username to create n8n user in PECE project.
+- **SITE_N8N_PASSWORD**: Password to create n8n user in PECE project.
 - **N8N_HTTP_ACCESS**: User and password to authenticate in n8n url.
 
 Below has the explanation about each variable
+
+#### SITE_N8N_USERNAME and SITE_N8N_PASSWORD
+1- If you set this variable before install PECE project go to step 4, else go to step 2
+
+2- Define password to n8n user in the PECE Project.
+![Folder Structure](images/n8n-define-password.gif)
+If you wish you can also change the n8n name too.
+
+3- Add new username and password in the SITE_N8N_USERNAME and SITE_N8N_PASSWORD.
+
+4- Open n8n and create new credentials
+
+5- Copy your `SITE_N8N_USERNAME` and `SITE_N8N_PASSWORD` and paste this in new credentials
+
 
 #### N8N_CLIENT_ID
 After install PECE project, you need get the consumer UUID and put in this variable
@@ -20,7 +34,7 @@ After install PECE project, you need get the consumer UUID and put in this varia
 
 2- Copy UUID from n8n consumer or other consumer.
 
-![Put N8N_CLIENT_ID](images/getN8NClientId.gif)
+![Put N8N_CLIENT_ID](images/get-n8n-client-id.gif)
 
 #### N8N_CLIENT_SECRET
 You need create the client secret in the consumer
@@ -31,14 +45,6 @@ You need create the client secret in the consumer
 
 ![Put N8N_CLIENT_ID](images/n8n-client-secret.gif)
 
-#### WEBHOOK_N8N_USERNAME and WEBHOOK_N8N_PASSWORD
-You need create the authenticate to your webhooks in n8n to others application
-
-1- Open n8n and goto credentials
-
-2- Copy your `WEBHOOK_N8N_USERNAME` and `WEBHOOK_N8N_PASSWORD` and paste in this new credentials
-
-![Put N8N_CLIENT_ID](images/createN8NCredentials.gif)
 
 #### N8N_HTTP_ACCESS
 1- Use this command in your terminal `echo $(htpasswd -nb user password)` where `user` and `password` are
@@ -65,7 +71,7 @@ Here has many examples: https://n8n.io/workflows
 #### n8n in PECE Project
 
 ##### Folder structure
-![Folder Structure](images/folderN8N.png)
+![Folder Structure](images/folder-n8n.png)
 
 - **enabled**: Folder with the jsons files to need run.
 - **base_pece_automation.json**: Base to start your automations.
