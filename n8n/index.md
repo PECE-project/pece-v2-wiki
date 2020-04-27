@@ -14,7 +14,7 @@ This integration is the responsible for all automations on PECE project.
 Below has the explanation about each variable
 
 #### SITE_N8N_USERNAME and SITE_N8N_PASSWORD
-If you set this variable before install PECE project you don't need continue this step, 
+If you set this variables before install PECE project then you don't need continue this step, 
 only if you change user and password from n8n
 
 1- Define password to n8n user in the PECE Project.
@@ -72,11 +72,44 @@ Here has many examples: https://n8n.io/workflows
 - **enabled**: Folder with the jsons files to need run.
 - **base_pece_automation.json**: Base to start your automations.
 
-##### Creating automation
-1- Import json base file
+##### Creating workflow
+1- Import the json base file
+![Import the json](images/import-n8n-json.gif)
 
-2- Copy client id to connect in the API
+- **PECE Essay Created**: Webhook example to call when new PECE Essay is Created
+- **Get Authentication Token**: Call the python script using the .env variables to create OAuth 2.0 token.
+- **GraphQL**: Call PECE API to get more information
+
+You can access each node for see the settings.
+
+2- Complete your workflow with others nodes.
+
+3- Save your workflow and enable.
+
+![Save and Enable workflow](images/save-enable-workflow.gif)
+
+4- Create the rule event in the PECE project to call your workflow, for default the `save_pece_essay` is intalled.
+
+1.  Access `Configuration > Workflow > Rules > Edit save_pece_essay`
+2.  Edit Action `Webhook Post`
+3.  Update the URL to your webhook URL.
+![Rule Edit](images/rule-edit.gif)
+
+4.  Update `API User Name` and `API User Password` to your user and password if you added Authentication property in the Webhook node in n8n.
+5.  Save your rule.
+
+5- Test your workflow with click in `Execute Workflow` and register a PECE Essay.
+1.  To test you need change your Webhook URL in the rule to test url, step 4
+
+![URL Test](images/url-test.png)
+
+2.  Now, register a PECE Essay
+
+Look the result:
+
+
+6- Download your workflow and add in the `n8n-automation/enabled`
 
 
 ##### Enable automations
-Run `make start-automations` after install PECE project or update/create automations
+Run `make start-automations` after install PECE project or update/create workflows
