@@ -31,13 +31,28 @@ You need create the client secret in the consumer
 
 ![Put N8N_CLIENT_ID](images/n8n-client-secret.gif)
 
+#### WEBHOOK_N8N_USERNAME and WEBHOOK_N8N_PASSWORD
+You need create the authenticate to your webhooks in n8n to others application
+
+1- Open n8n and goto credentials
+
+2- Copy your `WEBHOOK_N8N_USERNAME` and `WEBHOOK_N8N_PASSWORD` and paste in this new credentials
+
+![Put N8N_CLIENT_ID](images/createN8NCredentials.gif)
+
 #### N8N_HTTP_ACCESS
 1- Use this command in your terminal `echo $(htpasswd -nb user password)` where `user` and `password` are
 the login in the http url access.
 
-2- Get result terminal and put in the `N8N_HTTP_ACCESS` variable in `.env` file.
+2- Get the result on terminal and paste in the `N8N_HTTP_ACCESS` variable in `.env` file.
 
 3- Start/Restart n8n docker service.
+
+Example with user `test` and password `test`
+```shell
+$ echo $(htpasswd -nb test test)
+test:$apr1$5/03Eb6p$5Zk5OB.xI.j0HBlT69heb.
+```
 
 ### Automations
 
