@@ -14,18 +14,14 @@ This integration is the responsible for all automations on PECE project.
 Below has the explanation about each variable
 
 #### SITE_N8N_USERNAME and SITE_N8N_PASSWORD
-1- If you set this variable before install PECE project go to step 4, else go to step 2
+If you set this variable before install PECE project you don't need continue this step, 
+only if you change user and password from n8n
 
-2- Define password to n8n user in the PECE Project.
+1- Define password to n8n user in the PECE Project.
 ![Folder Structure](images/n8n-define-password.gif)
 If you wish you can also change the n8n name too.
 
-3- Add new username and password in the SITE_N8N_USERNAME and SITE_N8N_PASSWORD.
-
-4- Open n8n and create new credentials
-
-5- Copy your `SITE_N8N_USERNAME` and `SITE_N8N_PASSWORD` and paste this in new credentials
-
+2- Add new username and password in the `SITE_N8N_USERNAME` and `SITE_N8N_PASSWORD`.
 
 #### N8N_CLIENT_ID
 After install PECE project, you need get the consumer UUID and put in this variable
