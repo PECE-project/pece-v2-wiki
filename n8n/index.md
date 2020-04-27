@@ -22,6 +22,15 @@ After install PECE project, you need get the consumer UUID and put in this varia
 
 ![Put N8N_CLIENT_ID](images/getN8NClientId.gif)
 
+#### N8N_CLIENT_SECRET
+You need create the client secret in the consumer
+
+1- Write client secret in .env
+
+2- Copy and paste client secret in the consumer
+
+![Put N8N_CLIENT_ID](images/n8n-client-secret.gif)
+
 #### N8N_HTTP_ACCESS
 1- Use this command in your terminal `echo $(htpasswd -nb user password)` where `user` and `password` are
 the login in the http url access.
