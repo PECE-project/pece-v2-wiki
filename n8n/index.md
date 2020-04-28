@@ -98,18 +98,25 @@ You can access each node for see the settings.
 4.  Update `API User Name` and `API User Password` to your user and password if you added Authentication property in the Webhook node in n8n.
 5.  Save your rule.
 
-5- Test your workflow with click in `Execute Workflow` and register a PECE Essay.
+5- Test your workflow.
 1.  To test you need change your Webhook URL in the rule to test url, step 4
 
 ![URL Test](images/url-test.png)
 
-2.  Now, register a PECE Essay
+2.  Click in the `Execute Workflow`
 
-Look the result:
+3.  Now, register a PECE Essay
+
+![Test n8n](images/test-n8n.gif)
 
 
-6- Download your workflow and add in the `n8n-automation/enabled`
+Look the result in RocketChat:
 
+![Result in RocketChat](images/rocketchat.png)
+
+
+6- Download your workflow and add in the `n8n-automation/enabled`. Don't forget change the url test to url prod in PECE Project on production.
+![Download Workflow](images/download-workflow.gif)
 
 ##### Enable automations
 Run `make start-automations` after install PECE project or update/create workflows
