@@ -9,4 +9,5 @@ docker-compose up
 3) Access in your browser http://localhost:3000
 
 ## INDEX
-[n8n](n8n/index.md)
+- [n8n](n8n/index.md)
+- [Authentication](auth/index.md)
