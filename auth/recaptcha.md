@@ -11,14 +11,14 @@ We will need to have version 2 and 3 of the recaptcha on the website.
 
 ### Creating reCAPTCHA v2
 
-Navigate to [Console Google reCAPTCHA](https://www.google.com/recaptcha/admin){:target="_blank"} and create a new invisible reCAPTCHA v2
+Navigate to <a href="https://www.google.com/recaptcha/admin" target="_blank">Console Google reCAPTCHA</a> and create a new invisible reCAPTCHA v2
 
 ![Simple auth configuration](images/captcha-v2.gif)
 
 
 ### Creating reCAPTCHA v3
 
-Navigate to [Console Google reCAPTCHA](https://www.google.com/recaptcha/admin){:target="_blank"} and create new reCAPTCHA v3
+Navigate to <a href="https://www.google.com/recaptcha/admin" target="_blank">Console Google reCAPTCHA</a> and create new reCAPTCHA v3
 
 ![Simple auth configuration](images/captcha-v3.gif)
 
