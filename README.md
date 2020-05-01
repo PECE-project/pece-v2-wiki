@@ -10,7 +10,7 @@ docker-compose up
 
 ## INDEX
 * [How to Install](install/index.md)
-    - [Simple oAuth](oauth.md)
-    - [Google reCAPTCHA](recaptcha.md)   
+    - [Simple oAuth](auth/oauth.md)
+    - [Google reCAPTCHA](auth/recaptcha.md)   
 * [Automation (n8n)](n8n/index.md)
 * [Authentication System](auth/index.md)
