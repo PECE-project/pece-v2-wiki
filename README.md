@@ -14,3 +14,4 @@ docker-compose up
     - [Google reCAPTCHA](auth/recaptcha.md)   
 * [Automation (n8n)](n8n/index.md)
 * [Authentication System](auth/index.md)
+* [Run Tests](texts/index.md)
