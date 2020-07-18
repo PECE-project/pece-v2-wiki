@@ -25,3 +25,4 @@ docker-compose up
 ### System permission
 * [By User](permissions/user.md)
 * [By Role](permissions/role.md)
+* [By Group](permissions/group.md)
