@@ -26,3 +26,5 @@ docker-compose up
 * [By User](permissions/user.md)
 * [By Role](permissions/role.md)
 * [By Group](permissions/group.md)
+    - [How add user in the group](permissions/group.md#usergroup)
+    - [Add group and role permission](permissions/group.md#grouprole)
