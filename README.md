@@ -20,7 +20,7 @@ docker-compose up
 * [Authentication System](auth/index.md)
 
 ### Tests
-* [Run Tests](texts/index.md)
+* [Run Tests](tests/index.md)
 
 ### System permission
 * [By User](permissions/user.md)
